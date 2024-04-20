@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+  font: 40px "Lucida Sans",Arial,Calibri;
+}
+
+html, body {
+  height: 90vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  flex-direction: column;
+}
+
+#lienzo-tabla {
+  width: 80vw;
+  height: 60vh;
+  margin-top: 5vh;
+  z-index: -10;
+}
+
+.cajaCasillas {
+  /*backdrop-filter: blur(3px);*/
+  position: absolute;
+  
+  width: 80vw;
+  height: 60vh;
+  margin: 5vh auto 0;
+  
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 5%;
+}
+
+.casilla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: calc(3.5vw + 3.5vh);
+}
+
+.cajaBotones {
+  width:50vw;
+  height:20vh;
+  margin: 5vh auto 0;
+  padding: 2vh 0;
+  
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+button {
+  flex: 0 1 240px;
+  max-height: 100px;
+  margin-inline: 20px;
+  
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 20px;
+  box-shadow: 2px 5px .5px #0a3;
+  background: linear-gradient(320deg,#0a3,#3f7);
+  
+  font-family: Calibri;
+  font-weight: 700;
+  text-shadow: 0 0 2.5px white;
+  color: #eee;
+  
+  transition: all .1s linear 0s;
+}
+
+button:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 50px #3f7;
+  background: whitesmoke;
+  color: #333;
+}
+
+.deshabilitado {
+  display: none;
+}
+
+/* Media querys para cuando no pueda ser visible */
+
+@media only screen and (max-width:300px){
+  * {
+    display: none;
+  }
+}
+
+@media only screen and (max-height:250px){
+  * {
+    display: none;
+  }
+}
+
+/* Otros media querys */
+
+@media only screen and (max-width:510px){
+  button{
+    font-size: 20px;
+  }
+  .casilla{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width:510px){
+  #lienzo-tabla, .cajaCasillas{
+    width: 60vw;
+  }
+
+  button{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width:670px){
+  .cajaBotones{
+    width: 70vw;
+  }
+
+  button{
+    flex: 0 0 40%;
+    max-height: 80px;
+    margin-inline: 0;
+  }
+}
+
+@media only screen and (min-width:700px){
+  #lienzo-tabla, .cajaCasillas{
+    width: 50vw;
+  }
+  button {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width:360px){
+  .cajaBotones, button{
+    font-size: 18px;
+  }
+}

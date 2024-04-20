@@ -1,0 +1,59 @@
+#titulo{
+  position: absolute;
+  margin: 35vh auto;
+  z-index: 1000000;
+  
+  font:800 5vw Arial,"Courier New",Consolas;
+  color: #d57;
+  text-shadow: .5px 5px 0 #ccf, 0 2px 6px #555;
+  
+  transition: all 0.1s ease-in 0s;
+  animation-fill-mode: forwards;
+}
+
+/* @media querys */
+
+@media only screen and (max-width:550px){
+  #titulo{
+    font-size: 12vw;
+  }
+}
+
+/* Animaciones */
+
+.animacionEntrada {
+  animation: .3s ease-in 0s animacionEntrada;
+}
+
+.animacionSalida{
+  animation: .3s ease-in 0s animacionSalida;
+}
+
+@keyframes animacionEntrada{
+  0%{
+    opacity: 0;
+    scale: 1.32;
+  }
+  96%{
+    opacity: .2;
+    scale: .8;
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes animacionSalida{
+  0%{
+    scale: .9;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    scale: .001;
+    display: none;
+  }
+}
