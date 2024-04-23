@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-4c06348f-b0f6-4454-9b01-6e6bd255fddb" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99 36">
+  <defs>
+    <style>
+      .uuid-0a396b31-3d79-4cfc-ada6-e6ab2e363103 {
+        fill: #e0d9d9;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <polygon class="uuid-0a396b31-3d79-4cfc-ada6-e6ab2e363103" points="0 0 18 18 0 36 27 36 45 0 0 0"/>
+  <path class="uuid-0a396b31-3d79-4cfc-ada6-e6ab2e363103" d="m81,2V0h-27l-18,36h45v-2c-9.94,0-18-7.16-18-16S71.06,2,81,2Z"/>
+  <path class="uuid-0a396b31-3d79-4cfc-ada6-e6ab2e363103" d="m81,0v2c8.84,0,16,7.16,16,16s-7.16,16-16,16v2c9.94,0,18-8.06,18-18S90.94,0,81,0Z"/>
+</svg>

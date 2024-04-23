@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
- 
-  <title>Tic Tac Toe</title>
-  
-  <link rel="stylesheet" href="styles/style.css"/>
-  <link rel="stylesheet" href="styles/titulo.css"/>
-  
-</head>
-<body>
-  
-  <!-- Primero se dibuja la tabla -->
-  
-  <canvas id="lienzo-tabla">No se renderizo</canvas>
-  <script src="./scripts/Funciones_pantalla/dibujarTabla.js"></script>
+  <head style="display: none">
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
 
-  <!-- Luego se crean la casillas -->
+    <title>Tic Tac Toe</title>
 
-  <div class="cajaCasillas"></div>
-  <script src="./scripts/Funciones_casillas/generarCasillas.js"></script>
+    <link rel="shortcut icon" href="./icono.svg" type="image/svg">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/titulo.css" />
+  </head>
 
-  <!-- Ahora se crean los botones -->
+  <body>
+    <!-- Primero se dibuja la tabla -->
 
-  <div class="cajaBotones"></div>
-  <script src="./scripts/Funciones_botones/generarBotones.js"></script>
+    <canvas id="lienzo-tabla">No se renderizo</canvas>
+    <script src="./scripts/Funciones_pantalla/dibujarTabla.js"></script>
 
-  <!-- Aqui se crea el cartel del titulo animado -->
+    <!-- Luego se crean la casillas -->
 
-  <p id="titulo" class="deshabilitado">Tic Tac Toe</p>
-  <script src="./scripts/Funciones_pantalla/habilitarDeshabilitarTitulo.js"></script>
-  <script src="./scripts/Funciones_pantalla/clickTitulo.js"></script>
-  <script src="./scripts/Funciones_pantalla/cambiarTituloGanador.js"></script>
-  <script src="./scripts/Funciones_pantalla/sacarTituloGanador.js"></script>
-  
-  <!-- Los demas scripts del programa -->
+    <div class="cajaCasillas"></div>
+    <script src="./scripts/Funciones_casillas/generarCasillas.js"></script>
 
-  <!-- Scripts de botones -->
+    <!-- Ahora se crean los botones -->
 
-  <script src="./scripts/Funciones_botones/habilitarDeshabilitarBotones.js"></script>  
-  <script src="./scripts/Funciones_botones/cambiarBotones.js"></script>
-  <script src="./scripts/Funciones_botones/funcionesBotones.js"></script>
+    <div class="cajaBotones"></div>
+    <script src="./scripts/Funciones_botones/generarBotones.js"></script>
 
-  <!-- Scripts de casillas -->
+    <!-- Aqui se crea el cartel del titulo animado -->
 
-  <script src="./scripts/Funciones_casillas/habilitarDeshabilitarCasillas.js"></script>
-  <script src="./scripts/Funciones_casillas/funcionesCasillas.js"></script>
-  <script src="./scripts/Funciones_casillas/setListenersCasillas.js"></script>
-  <script src="./scripts/Funciones_casillas/limpiarCasillas.js"></script>
+    <p id="titulo" class="deshabilitado">Tic Tac Toe</p>
+    <script src="./scripts/Funciones_pantalla/habilitarDeshabilitarTitulo.js"></script>
+    <script src="./scripts/Funciones_pantalla/clickTitulo.js"></script>
+    <script src="./scripts/Funciones_pantalla/cambiarTituloGanador.js"></script>
+    <script src="./scripts/Funciones_pantalla/sacarTituloGanador.js"></script>
 
-  <!-- Scripts de utilidad -->
+    <!-- Los demas scripts del programa -->
 
-  <script src="./scripts/Funciones_juego/devolverCambiarSigno.js"></script>
-  <script src="./scripts/Funciones_juego/resetVars.js"></script>
-  <script src="./scripts/Funciones_juego/numeroRandom.js"></script>
-  <script src="./scripts/Funciones_juego/pausarPrograma.js"></script>
+    <!-- Scripts de botones -->
 
-  <!-- Scripts de verificacion -->
+    <script src="./scripts/Funciones_botones/habilitarDeshabilitarBotones.js"></script>
+    <script src="./scripts/Funciones_botones/cambiarBotones.js"></script>
+    <script src="./scripts/Funciones_botones/funcionesBotones.js"></script>
 
-  <script src="./scripts/Funciones_juego/Funciones_revisar/obtenerSignosCasillas.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_revisar/funcionesDevuelvenLineas.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_revisar/revisarTabla.js"></script>
+    <!-- Scripts de casillas -->
 
-  <!-- Scripts de IA -->
+    <script src="./scripts/Funciones_casillas/habilitarDeshabilitarCasillas.js"></script>
+    <script src="./scripts/Funciones_casillas/funcionesCasillas.js"></script>
+    <script src="./scripts/Funciones_casillas/setListenersCasillas.js"></script>
+    <script src="./scripts/Funciones_casillas/limpiarCasillas.js"></script>
 
-  <script src="./scripts/Funciones_juego/Funciones_IA/devolverJugadaIA.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/alternativa.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/peligroCasillas.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/primeraJugada.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/completar.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/atacar.js"></script>
-  <script src="./scripts/Funciones_juego/Funciones_IA/tresEsquinas.js"></script>
+    <!-- Scripts de utilidad -->
 
-  <!-- Scripts principales -->
+    <script src="./scripts/Funciones_juego/devolverCambiarSigno.js"></script>
+    <script src="./scripts/Funciones_juego/resetVars.js"></script>
+    <script src="./scripts/Funciones_juego/numeroRandom.js"></script>
+    <script src="./scripts/Funciones_juego/pausarPrograma.js"></script>
 
-  <script src="./scripts/juego.js"></script>  <!-- Esta funcion controlara el flujo del juego -->
-  <script src="./scripts/comenzarJuego.js"></script>  <!-- Esta funcion preparara la interfaz del juego -->
-  <script src="./scripts/menuPrincipal.js"></script>  <!-- Esta es la funcion que ejecuta el menu principal -->
+    <!-- Scripts de verificacion -->
 
-</body>
+    <script src="./scripts/Funciones_juego/Funciones_revisar/obtenerSignosCasillas.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_revisar/funcionesDevuelvenLineas.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_revisar/revisarTabla.js"></script>
+
+    <!-- Scripts de IA -->
+
+    <script src="./scripts/Funciones_juego/Funciones_IA/devolverJugadaIA.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/alternativa.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/peligroCasillas.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/primeraJugada.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/completar.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/atacar.js"></script>
+    <script src="./scripts/Funciones_juego/Funciones_IA/tresEsquinas.js"></script>
+
+    <!-- Scripts principales -->
+
+    <script src="./scripts/juego.js"></script>
+    <!-- Esta funcion controlara el flujo del juego -->
+    <script src="./scripts/comenzarJuego.js"></script>
+    <!-- Esta funcion preparara la interfaz del juego -->
+    <script src="./scripts/menuPrincipal.js"></script>
+    <!-- Esta es la funcion que ejecuta el menu principal -->
+  </body>
 </html>
